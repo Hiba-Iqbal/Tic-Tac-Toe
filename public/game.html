@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./game.css">
+    <title>Let's Go</title>
+</head>
+<body onload="load()">
+    <div id="loader"></div>
+    <div class="Begin flex">
+        <div class="head flex">
+            <h1>LET'S BEGIN</h1>
+        </div>
+        <div class="count flex">    
+            <span class="one">THREE</span>
+            <span class="two">TWO</span>
+            <span class="three">ONE</span>
+            <span class="four">START</span>
+        </div>
+    
+    </div>
+    <div class="container">
+        <div class="page1">
+            <div class="heading flex">
+                <div class="player1Name"> Player-I: X <span id="outputName1"></span></div>
+                <div class="player2Name">Player-II : O  <span id="outputName2"></span></div>
+                <div class="restartBtn flex">
+                    <button onclick="restart()" >RESTART</button>
+                </div>
+            </div>
+            <div class="outer">
+                <div id="r1" class="box">
+                    
+                </div>
+                <div id="r2" class="box"></div>
+                <div id="r3" class="box"></div>
+
+                <div id="r4" class="box"></div>
+                <div id="r5" class="box">
+                
+                </div>
+                <div id="r6" class="box"></div>
+
+                <div id="r7" class="box"></div>
+                <div id="r8" class="box"></div>
+                <div id="r9" class="box"></div>
+
+            </div>
+            
+      
+            <div class="result flex">
+                <p id="cong">Congratulations</p>
+                <p id="rs">X Won</p>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="./game.js"></script>
+</body>
+</html>
